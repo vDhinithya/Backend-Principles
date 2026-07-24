@@ -15,7 +15,7 @@ To make the web scalable, REST relies on specific constraints. The most critical
 
 ### 3. URL Structure and Resource Naming (The Golden Rule)
 When designing routes, the path segment must logically represent the resource hierarchy.
-*   **Anatomy of an API URL:** `https://api.example.com/v1/projects/zist?q=something#header` (Scheme -> Subdomain -> Versioning -> Resource / represent hierarchical layer -> after ? represent the query parameter -> #(fragment) direct to a particular section in webpage ).
+*   **Anatomy of an API URL:** `https://api.example.com/v1/project s/zist?q=something#header` (Scheme -> Subdomain -> Versioning -> Resource / represent hierarchical layer -> after ? represent the query parameter -> #(fragment) direct to a particular section in webpage ).
 *   **Always Use Plural Nouns:** Resources in the URL must always be plural, even when fetching a single entity.
     *   *Correct:* `GET /projects` (List) and `GET /projects/123` (Single).
     *   *Incorrect:* `GET /project/123`.
